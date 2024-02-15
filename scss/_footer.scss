@@ -1,0 +1,22 @@
+.footer {
+    background-color: #FAECED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    height: 70px;
+    font-family: 'Quicksand', sans-serif;
+    color: #D8C1C2;
+    font-weight: bold;
+    grid-area: footer;
+}
+
+@media screen and (max-width:767px) and (min-width:350px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: 120px;
+        align-items: center;
+    }
+}

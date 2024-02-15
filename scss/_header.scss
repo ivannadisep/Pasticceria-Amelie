@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/* USAR REM EN FONT SIZE PARA QUE SE ADAPTE SOLO A LOS TAMAÑOS DE PANTALLA */
+
+/* 100% a 16px, para 10px, es el 62,5%, entonces me manejo con rem y no con px. 1REM SON 10PX */
+
+/* CSS DE INDEX / HEADER / FOOTER */
+
+// ul {
+//     list-style: none;
+//     display: flex;
+//     gap: 120px;
+// }
+
+
+// a {
+//     text-decoration: none;
+//     font-family: 'Quicksand', sans-serif;
+//     color: #D8C1C2;
+//     padding: 25px;
+//     font-weight: bold;
+// }
+
+
+// .submenu {
+//     display: none;
+//     position: absolute;
+//     list-style: none;
+//     display: flex;
+//     gap: 120px;
+// }
+
+// .submenu li {
+//     display: block;
+//     background-color: #FAECED;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     border-radius: 5rem;
+// }
+
+// .menu li:hover .submenu {
+//     display: block;
+// }
+
+// .header {
+//     background-color: #FAECED;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: sticky;
+//     top: 0;
+//     grid-area: header;
+
+//     .navbar{
+//         font-family: 'Quicksand', sans-serif;
+//         color: #D8C1C2; ;
+//         font-size: 18px;
+//         width: 100%;
+//         z-index:99;
+
+//             .nav-link{
+//             margin-left: 40px;
+
+//                 &hover{
+//                 background-color:#BFB3A8;
+//                 }
+//             }
+//         }
+//         .menu {
+
+//             li {
+//                 display: inline-block;
+//                 position: relative;
+//                 list-style: none;
+
+//                 a {
+//                     text-decoration: none;
+//                     font-family: 'Quicksand', sans-serif;
+//                     color:#D8C1C2;
+//                     padding: 25px;
+//                     font-weight: bold;
+//                 }
+
+//             }
+
+//             .submenu {
+//                 display: none;
+//                 position: absolute;
+//                 list-style: none;
+//                 display: flex;
+//                 gap: 120px;
+
+//                 li {
+//                     display: block;
+//                     background-color: #FAECED;
+//                     padding-top: 10px;
+//                     padding-bottom: 10px;
+//                     border-radius: 5rem;
+//                 }
+
+//             }
+
+//         }
+//     }
+
+
+
+
+// .headerLogo {
+//     .logo {
+//         width: 125px;
+//     }
+// }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAECED;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    grid-area: header;
+    color: #D8C1C2;
+
+    .headerLogo {
+        .logo {
+            width: 125px;
+        }
+    }
+
+    .navbar {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        width: 100%;
+        z-index: 99;
+        color: #D8C1C2;
+
+        .nav-link {
+            color: #D8C1C2;
+            font-weight: bold;
+        }
+    }
+
+}

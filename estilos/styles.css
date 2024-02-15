@@ -1,0 +1,279 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62, 5%; }
+
+/* USAR REM EN FONT SIZE PARA QUE SE ADAPTE SOLO A LOS TAMAÑOS DE PANTALLA */
+/* 100% a 16px, para 10px, es el 62,5%, entonces me manejo con rem y no con px. 1REM SON 10PX */
+/* CSS DE INDEX / HEADER / FOOTER */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAECED;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  grid-area: header;
+  color: #D8C1C2; }
+  .header .headerLogo .logo {
+    width: 125px; }
+  .header .navbar {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    z-index: 99;
+    color: #D8C1C2; }
+    .header .navbar .nav-link {
+      color: #D8C1C2;
+      font-weight: bold; }
+
+.Introduccion1 .ImagenTitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  text-align: center; }
+  .Introduccion1 .ImagenTitulo .IndexImagen {
+    width: 60%; }
+
+.Introduccion1 .TituloMobile {
+  color: #D8C1C2;
+  display: none; }
+
+.Introduccion1 .Parrafo {
+  line-height: 2.6;
+  color: #D8C1C2;
+  font-size: larger;
+  padding: 25px;
+  text-align: center; }
+
+.Imagenesintro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem; }
+  .Imagenesintro .imgintro {
+    width: 30%;
+    border-radius: 1rem; }
+
+.Introduccion2 {
+  font-family: 'Quicksand', sans-serif; }
+  .Introduccion2 .TituloIndex {
+    color: #d8c0c1;
+    font-size: 3rem;
+    padding-top: 25px;
+    text-align: center;
+    text-decoration: overline; }
+  .Introduccion2 .Parrafo {
+    line-height: 2.6;
+    color: #9e8183;
+    font-size: larger;
+    padding: 25px;
+    text-align: center; }
+
+/*     MEDIA QUERIES   INDEX   TAMANO    CELULAR*/
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .Introduccion1 .TituloMobile {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-decoration: overline; }
+  .Introduccion1 .ImagenTitulo {
+    visibility: hidden; }
+  .Introduccion1 .Imagenesintro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; } }
+
+.footer {
+  background-color: #FAECED;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  height: 70px;
+  font-family: 'Quicksand', sans-serif;
+  color: #D8C1C2;
+  font-weight: bold;
+  grid-area: footer; }
+
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 120px;
+    align-items: center; } }
+
+.MainContacto {
+  display: flex;
+  justify-content: center; }
+  .MainContacto .ContenedorContacto {
+    background-color: #FAECED;
+    border-radius: 2rem;
+    color: #D8C1C2;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .MainContacto .ContenedorContacto .TituloPrimario {
+      font-family: 'Quicksand', sans-serif;
+      color: #D8C1C2;
+      font-size: 3rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      text-decoration: overline; }
+    .MainContacto .ContenedorContacto .btn {
+      background-color: white;
+      border: #D8C1C2;
+      color: #D8C1C2; }
+    .MainContacto .ContenedorContacto .Contacto1 {
+      padding-bottom: 2rem; }
+    .MainContacto .ContenedorContacto .Contacto2 {
+      padding-bottom: 2rem; }
+
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .MainContacto .ContenedorContacto {
+    width: 80%; }
+    .MainContacto .ContenedorContacto .TituloPrimario {
+      font-size: 30px; } }
+
+.container3 .MainGaleria .ContenedorGaleria .Imggaleria {
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #D8C1C2;
+  font-family: 'Quicksand', sans-serif; }
+  .container3 .MainGaleria .ContenedorGaleria .Imggaleria .Galeria1 {
+    border-radius: 4rem; }
+
+@media screen and (max-width: 768px) and (min-width: 350px) {
+  .container3 .MainGaleria .ContenedorGaleria .Imggaleria {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .container3 .MainGaleria .ContenedorGaleria .Imggaleria .Galeria1 {
+      width: 90%;
+      border-radius: 4rem; } }
+
+.container4 .MainNosotros .ContenedorNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container4 .MainNosotros .ContenedorNosotros .TituloPrimario {
+    font-family: 'Quicksand', sans-serif;
+    color: #D8C1C2;
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-decoration: overline; }
+  .container4 .MainNosotros .ContenedorNosotros .ParrafoNosotros {
+    line-height: 2.6;
+    color: #D8C1C2;
+    font-size: larger;
+    padding: 25px;
+    width: 80%; }
+
+@media screen and (max-width: 768px) and (min-width: 350px) {
+  .container4 .MainNosotros .ContenedorNosotros .TituloPrimario {
+    font-size: 30px; } }
+
+.container5 .MainServicios .ContenedorServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 50px; }
+  .container5 .MainServicios .ContenedorServicios .Servicios1 {
+    background-color: #FAECED;
+    border-radius: 2rem;
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; }
+    .container5 .MainServicios .ContenedorServicios .Servicios1 .TituloPrimario {
+      font-family: 'Quicksand', sans-serif;
+      color: #D8C1C2;
+      font-size: 3rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      text-decoration: overline; }
+    .container5 .MainServicios .ContenedorServicios .Servicios1 .Parrafo {
+      line-height: 2;
+      color: #D8C1C2;
+      font-size: larger;
+      padding: 15px;
+      width: 90%; }
+  .container5 .MainServicios .ContenedorServicios .Servicios2 {
+    background-color: #FAECED;
+    border-radius: 2rem;
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; }
+    .container5 .MainServicios .ContenedorServicios .Servicios2 .TituloPrimario {
+      font-family: 'Quicksand', sans-serif;
+      color: #D8C1C2;
+      font-size: 3rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      text-decoration: overline; }
+    .container5 .MainServicios .ContenedorServicios .Servicios2 .Parrafo {
+      line-height: 2;
+      color: #D8C1C2;
+      font-size: larger;
+      padding: 15px;
+      width: 90%; }
+
+@media screen and (max-width: 768px) and (min-width: 350px) {
+  .container5 .MainServicios .ContenedorServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 50px; }
+    .container5 .MainServicios .ContenedorServicios .Servicios1 {
+      background-color: #FAECED;
+      border-radius: 2rem;
+      width: 90%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center; }
+      .container5 .MainServicios .ContenedorServicios .Servicios1 .TituloPrimario {
+        font-size: 30px; }
+    .container5 .MainServicios .ContenedorServicios .Servicios2 {
+      background-color: #FAECED;
+      border-radius: 2rem;
+      width: 90%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center; }
+      .container5 .MainServicios .ContenedorServicios .Servicios2 .TituloPrimario {
+        font-size: 30px; } }
+
+.body {
+  background-color: white; }

@@ -1,0 +1,41 @@
+.container3 {
+    .MainGaleria {
+        .ContenedorGaleria {
+            .Imggaleria {
+                display: flex;
+                flex-direction: row;
+                gap: 9rem;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                color: #D8C1C2;
+                font-family: 'Quicksand', sans-serif;
+            
+                .Galeria1{
+                    border-radius: 4rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:350px) {
+    .container3 {
+        .MainGaleria {
+            .ContenedorGaleria {
+                .Imggaleria {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    
+                    .Galeria1{
+                        width: 90%;
+                        border-radius: 4rem;
+                    }
+                }
+    
+            }
+        }
+    }
+}

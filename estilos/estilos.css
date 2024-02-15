@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/* USAR REM EN FONT SIZE PARA QUE SE ADAPTE SOLO A LOS TAMAÑOS DE PANTALLA */
+
+/* 100% a 16px, para 10px, es el 62,5%, entonces me manejo con rem y no con px. 1REM SON 10PX */
+
+/* CSS DE INDEX / HEADER / FOOTER */
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 120px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #D8C1C2;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+    background-color: #FAECED;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5rem;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.Introduccion1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.Parrafo {
+    line-height: 2.6;
+    color: #D8C1C2;
+    font-size: larger;
+    padding: 25px;
+}
+
+.header {
+    background-color: #FAECED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    position: sticky;
+    top: 0;
+    grid-area: header;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.ImagenTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.imgintro {
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.IndexImagen{
+    width: 60%;
+}
+
+.Introduccion2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.TituloIndex {
+    color: #D8C1C2;
+    font-size: 40px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #FAECED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    height: 70px;
+    font-family: 'Quicksand', sans-serif;
+    color: #D8C1C2;
+    font-weight: bold;
+    grid-area: footer;
+}
+
+.containerprincipal1 {
+    grid-area: index;
+}
+
+
+
+
+/* CSS DE CONTACTO */
+
+.ContenedorContacto {
+    color: #D8C1C2;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.TituloPrimario {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    padding: 25px;
+    text-align: center;
+    color: #D8C1C2;
+}
+
+/* CSS SERVICIOS */
+
+.Servicios1 {
+    background-color: #FAECED;
+    border-radius: 2rem;
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.Servicios2 {
+    background-color: #FAECED;
+    border-radius: 2rem;
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* CSS GALERIA */
+
+
+.Imggaleria {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 4rem;
+    color: #D8C1C2;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Galeria1 {
+    border-radius: 8rem;
+}
+
+
+/* CSS DE NOSOTROS */
+.Nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ParrafoNosotros {
+    line-height: 2.6;
+    color: #D8C1C2;
+    font-size: larger;
+    padding: 25px;
+    width: 80%;
+}
+
+
+
+.ContenedorServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+
+
+/* CSS TEAM */
+
+.ImgEquipo {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 4rem;
+    color: #D8C1C2;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Equipo1 {
+    border-radius: 8rem;
+}
+
+
+
+
+/* GRIDS */
+
+.container1 {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "index"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}

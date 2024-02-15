@@ -1,0 +1,55 @@
+.MainContacto {
+
+    display: flex;
+    justify-content: center;
+
+    .ContenedorContacto {
+        background-color: #FAECED;
+        border-radius: 2rem;
+        color: #D8C1C2;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        width: 50%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+
+        .TituloPrimario {
+            font-family: 'Quicksand', sans-serif;
+            color: #D8C1C2;
+            font-size: 3rem;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            text-decoration: overline;
+        }
+
+        .btn {
+            background-color: white;
+            border: #D8C1C2;
+            color: #D8C1C2;
+
+
+        }
+
+        .Contacto1 {
+            padding-bottom: 2rem;
+        }
+
+        .Contacto2 {
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:350px) {
+    .MainContacto {
+        .ContenedorContacto{
+            width: 80%;
+    
+            .TituloPrimario {
+                font-size: 30px;
+            }
+        }
+    }
+}
